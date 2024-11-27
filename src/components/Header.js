@@ -6,9 +6,9 @@ import {
     faMedium,
     faStackOverflow,
   } from "@fortawesome/free-brands-svg-icons";
-  import {Box, HStack} from "@chakra-ui/react";
+import {Box, HStack} from "@chakra-ui/react";
 
-  const socials = [
+const socials = [
     {
         icon:faGithub,
         url: "https://github.com",
@@ -28,19 +28,18 @@ import {
   ]
 
   const Header =()=>{
-const handleClick=(anchor)=>()=>{
-const id=`${anchor}-section`;
-const element = document.getElementById(id);
-if (element){
-    element.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  };
-}
-
-return (
+    const handleClick=(anchor)=>()=>{
+        const id=`${anchor}-section`;
+        const element = document.getElementById(id);
+        if (element){
+            element.scrollIntoView({
+                 behavior: "smooth",
+                 block: "start",
+                });
+            }
+        };
+        
+    return (
     <Box
       position="fixed"
       top={0}
@@ -69,5 +68,8 @@ return (
           </nav>
         </HStack>
       </Box>
-    </Box>  
-)
+    </Box>
+    )
+}
+
+export default Header;
