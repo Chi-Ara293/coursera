@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-container {
   display: flex;
-  flex-direction: column;
+  align-items: center; /* Vertically center the items */
+  color: rgb(255, 168, 139);
+}
+
+.header-image {
+  width: 240px; /* Adjust the size of the image */
+  height: auto;
+  margin-left: 5px; /* Optional: Add some space between the text and image */
+}
+
+.nav-image{
+  width: 25px;
+  height:auto
+}
+
+.nav {
+  list-style-type: none;  /* Removes bullet points */
+  margin: 0;              /* Remove default margin */
+  padding: 0;             /* Remove default padding */
+  display: flex;          /* Align items horizontally */
+  justify-content: center; /* Optional: Centers the list items horizontally */
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;     /* Vertically center the text and image */
+  margin-right: 20px;      /* Space between the items */
+}
+
+.nav-item img {
+  margin-right: 8px;       /* Space between the image and the text */
+}
+
+/* Optional: Style the anchor (for Instagram) */
+.nav-link {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-decoration: none;  /* Removes underline from the link */
+  color: inherit;         /* Inherit color from parent */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  display: flex;         /* Align children horizontally */
+  justify-content: center; /* Optional: Add space between Header and Nav */
+  align-items: center;   /* Optional: Vertically align the items */
+  padding: 10px; 
 }
