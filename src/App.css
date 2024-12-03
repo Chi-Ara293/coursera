@@ -1,13 +1,13 @@
 .header-container {
   display: flex;
-  align-items: center; /* Vertically center the items */
+  align-items: center; 
   color: rgb(255, 168, 139);
 }
 
 .header-image {
-  width: 240px; /* Adjust the size of the image */
+  width: 240px; 
   height: auto;
-  margin-left: 5px; /* Optional: Add some space between the text and image */
+  margin-left: 5px; 
 }
 
 .nav-image{
@@ -16,34 +16,81 @@
 }
 
 .nav {
-  list-style-type: none;  /* Removes bullet points */
-  margin: 0;              /* Remove default margin */
-  padding: 0;             /* Remove default padding */
-  display: flex;          /* Align items horizontally */
-  justify-content: center; /* Optional: Centers the list items horizontally */
+  list-style-type: none;  
+  margin: 0;              
+  padding: 0;             
+  display: flex;          
+  justify-content: center; 
 }
 
 .nav-item {
   display: flex;
-  align-items: center;     /* Vertically center the text and image */
-  margin-right: 20px;      /* Space between the items */
+  align-items: center;     
+  margin-right: 20px;     
 }
 
 .nav-item img {
-  margin-right: 8px;       /* Space between the image and the text */
+  margin-right: 8px;      
 }
 
-/* Optional: Style the anchor (for Instagram) */
 .nav-link {
   display: flex;
   align-items: center;
-  text-decoration: none;  /* Removes underline from the link */
-  color: inherit;         /* Inherit color from parent */
+  text-decoration: none;  
+  color: inherit;         
 }
 
 .container {
-  display: flex;         /* Align children horizontally */
-  justify-content: center; /* Optional: Add space between Header and Nav */
-  align-items: center;   /* Optional: Vertically align the items */
+  display: flex;         
+  flex-direction: column;
+}
+
+.container > div {
+  margin: 10px; 
+}
+
+.row {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
   padding: 10px; 
+}
+
+.bio-container {
+  align-items: center;
+  justify-content: center; 
+  padding: 20px; 
+  border-radius: 10px; 
+  max-width: 100%; 
+  margin: 0 auto; 
+  text-align: center; 
+}
+
+.bio-image {
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+}
+
+h2 {
+  font-size: 1.6rem; 
+  color: #333; 
+  margin-bottom: 10px; 
+}
+
+p {
+  font-size: 1.1rem; 
+  color: #666; 
+  line-height: 1.5; 
+  max-width: 100%; 
+}
+
+.footer{
+  display: flex; 
+  justify-content: flex-end; 
+  align-items: flex-end; 
+  background-color: #f8f8f8; 
+  padding: 10px; 
+  height: 25px; 
 }

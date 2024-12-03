@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";  
 import instagram_icon from "../assets/instagram_icon.png"
 import email_icon from "../assets/email_icon.png"
 
@@ -17,14 +18,15 @@ const Nav=()=>{
           </a>
         </li>
         <li className="nav-item">
+          <Link to="/contact"> 
             <img 
               src={email_icon} 
               alt="Email icon"
               className="nav-image" 
             />
             Contact me
+          </Link>
         </li>
-
       </ul>
 </>
   )

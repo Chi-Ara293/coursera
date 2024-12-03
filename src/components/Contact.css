@@ -1,0 +1,63 @@
+/* Form styling */
+form {
+    width: 50%;         /* Limits the width of the form */
+    margin: 20px auto;        /* Centers the form horizontally */
+    padding: 20px;            /* Adds space inside the form */
+    background-color: #ffeeee; /* Light background color */
+    border-radius: 8px;       /* Rounded corners */
+  }
+  
+  /* Style for labels */
+  label {
+    display: block;           /* Makes the label take up a full line */
+    margin-bottom: 8px;       /* Adds space below the label */
+    font-weight: bold;        /* Makes the label text bold */
+    font-size: 14px;          /* Adjusts font size */
+  }
+  
+  /* Style for input and textarea fields */
+  input, textarea {
+    width: 100%;              /* Makes input fields full width inside their container */
+    padding: 10px;            /* Adds space inside the fields */
+    margin-bottom: 16px;      /* Adds space below each input field */
+    border: 1px solid #ccc;   /* Light border */
+    border-radius: 4px;       /* Slightly rounded corners */
+    font-size: 14px;          /* Sets a readable font size */
+    box-sizing: border-box;   /* Ensures padding and border are included in the width */
+  }
+  
+  /* Style for textarea */
+  textarea {
+    resize: vertical;         /* Allows vertical resizing of textarea */
+    min-height: 120px;         /* Sets a minimum height for the textarea */
+  }
+  
+  /* Button styling */
+  button {
+    width: auto;              /* Button width will be auto to fit its content */
+    padding: 12px 24px;       /* Adds padding inside the button */
+    background-color: darksalmon; /* Light red background color */
+    color: white;             /* White text color */
+    border: none;             /* Removes default border */
+    border-radius: 4px;       /* Rounded corners */
+    font-size: 16px;          /* Sets font size */
+    cursor: pointer;          /* Changes the cursor to a pointer */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+    margin-top: 10px;         /* Adds space between the button and message field */
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background-color:coral; /* Slightly different color on hover */
+  }
+  
+  /* Optional: Style for form on small screens */
+  @media (max-width: 600px) {
+    form {
+      padding: 15px;          /* Slightly smaller padding for mobile */
+    }
+    button {
+      font-size: 14px;        /* Smaller button text on mobile */
+    }
+  }
+  
